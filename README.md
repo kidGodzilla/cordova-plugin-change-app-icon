@@ -1,4 +1,4 @@
-ChangeAppIcon
+Change App Icon - Cordvoa Plugin
 ==================
 
 *Work in progress*
