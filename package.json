@@ -1,0 +1,25 @@
+{
+    "name": "cordova-plugin-change-app-icon",
+    "version": "0.0.1",
+    "description": "Change your App Icon form within the app on iOS 10.3+",
+    "cordova": {
+        "id": "cordova-plugin-change-app-icon",
+        "platforms": [      
+          "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/domisginger"
+    },
+    "keywords": [
+        "cordova",
+        "ionic",
+        "icon",
+        "appicon",
+        "ecosystem:cordova",    
+        "cordova-ios"
+    ],
+    "author": "Dom Slatford",
+    "license": "MIT"
+}

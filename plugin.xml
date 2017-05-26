@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-change-app-icon" version="0.0.1">
+    <name>Change App Icon</name>
+    <description>Change your App Icon form within the app on iOS 10.3+</description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/change-app-icon.js" name="changeAppIcon">
+        <clobbers target="cordova.plugins.screenorientation" />
+    </js-module>
+    
+    <preference name="AlternateAppIcon1Name"/>
+    <preference name="AlternateAppIcon2Name"/>
+    <preference name="AlternateAppIcon3Name"/>
+    <preference name="AlternateAppIcon4Name"/>
+    <preference name="AlternateAppIcon5Name"/>
+    <preference name="AlternateAppIcon1Path"/>    
+    <preference name="AlternateAppIcon2Path"/>
+    <preference name="AlternateAppIcon3Path"/>
+    <preference name="AlternateAppIcon4Path"/>
+    <preference name="AlternateAppIcon5Path"/>
+
+    <platform name="ios">
+        <header-file src="src/ios/ChangeAppIcon.h" />
+        <source-file src="src/ios/ChangeAppIcon.m" />
+        
+        <config-file target="*-Info.plist" parent="CFBundleIcons">
+            <dict>
+                <key>CFBundlePrimaryIcon</key>
+                <dict>
+                    <key>AppIcon</key>
+                    <dict>
+                        <key>CFBundleIconFiles</key>
+                        <array>
+                            <string>nameOfIconFileIsArrayForMultipleIconSizes</string>
+                        </array>
+                        <key>UIPrerenderedIcon</key>
+                        <true/>
+                    </dict>
+                </dict>
+                <key>CFBundleAlternateIcons</key>
+                <dict>
+                    <key>$AlternateAppIcon1Name</key>
+                    <dict>
+                        <key>CFBundleIconFiles</key>
+                        <array>
+                            <string>$AlternateAppIcon1Path</string>
+                        </array>
+                        <key>UIPrerenderedIcon</key>
+                        <true/>
+                    </dict>
+
+                    <key>$AlternateAppIcon2Name</key>
+                    <dict>
+                        <key>CFBundleIconFiles</key>
+                        <array>
+                            <string>$AlternateAppIcon2Path</string>
+                        </array>
+                        <key>UIPrerenderedIcon</key>
+                        <true/>
+                    </dict>
+
+                    <key>$AlternateAppIcon3Name</key>
+                    <dict>
+                        <key>CFBundleIconFiles</key>
+                        <array>
+                            <string>$AlternateAppIcon3Path</string>
+                        </array>
+                        <key>UIPrerenderedIcon</key>
+                        <true/>
+                    </dict>
+
+                    <key>$AlternateAppIcon4Name</key>
+                    <dict>
+                        <key>CFBundleIconFiles</key>
+                        <array>
+                            <string>$AlternateAppIcon4Path</string>
+                        </array>
+                        <key>UIPrerenderedIcon</key>
+                        <true/>
+                    </dict>
+                    
+                    <key>$AlternateAppIcon5Name</key>
+                    <dict>
+                        <key>CFBundleIconFiles</key>
+                        <array>
+                            <string>$AlternateAppIcon5Path</string>
+                        </array>
+                        <key>UIPrerenderedIcon</key>
+                        <true/>
+                    </dict>
+                </dict>
+            </dict>
+        </config-file>
+    </platform>
+</plugin>
