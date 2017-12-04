@@ -13,11 +13,6 @@ To add this plugin just type
 
     cordova plugin add cordova-plugin-change-app-icon --variable AlternateAppIcon1Name="IconName" --variable AlternateAppIcon1Path="IconPath"
 
-To add this plugin just type
-
-    cordova plugin remove cordova-plugin-change-app-icon
-
-
 To set an alternate icon provide the name set when installing the plugin
 
     changeAppIcon.changeAppIcon(successCallbackFunction, errorCallbackFunction, alternateIconName);
