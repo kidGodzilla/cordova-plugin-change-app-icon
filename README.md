@@ -1,7 +1,7 @@
 Change App Icon - Cordvoa Plugin
 ==================
 
-*Work in progress*
+*This project is no longer activly maintained*
 
 As of iOS 10.3 Apple introduced the ability to Change an Apps Icon from within the app (See NFL app for example)
 This plugin enables this ability via cordova
