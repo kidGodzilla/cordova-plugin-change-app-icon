@@ -14,7 +14,8 @@
     CDVPluginResult* pluginResult = nil;
     NSString* alternateIconName = [command.arguments objectAtIndex:0];
 
-    BOOL supportsAlternateIcons = [UIApplication supportsAlternateIcons]
+    BOOL supportsAlternateIcons = [UIApplication supportsAlternateIcons];
+    
     if (supportsAlternateIcons) {     
         [UIApplication setAlternateIconName:alternateIconName completion:^(NSError *error){      
             if (error != nil) {            
